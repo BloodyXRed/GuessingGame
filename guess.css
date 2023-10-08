@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+    height: 100vh;
+    background:url(backgrundimg.jpg) no-repeat center center/cover;
+    width: 100%;
+}
+.playBtn{
+    display: flex; /* flex */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: transparent;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 35rem;
+    height: 10rem;
+    backdrop-filter: blur(2.25px);
+    box-shadow: -5px 5px 60px 5px #FED699;
+    cursor: pointer;
+}
+.btn{
+    display: inline-block;
+    top: 50%;
+    font-size: 4rem;
+    padding: 1rem;
+    color:#f13866 ;
+}
+.container{
+    display: none;/*inline-block*/
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+h1{
+    font-size: 4rem;
+    color: #0D043D;
+    text-align: center;
+}
+.game,.error,.statu,.replay{  
+    width: 100%;
+    display: flex;/*flex*/
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5.5rem;
+}
+#inpValue{
+    width: 75%;
+    height: 3rem;
+    padding: 0 1rem ;
+    background:linear-gradient(90deg,#FDC2A2,#f374be);
+    font-size: 1.75rem;
+    outline: none;
+    border-radius: 0.75rem;
+    margin-right: 0.1rem;
+}
+.check{
+    color: #f13866;
+    margin: 0;
+    font-size: 3.75rem;
+    padding: 0.1rem;
+    cursor: pointer;
+}
+.square{
+    color: #E0678A;
+}
+.square:hover{
+    color: rgb(8, 243, 145);
+}
+.cross{
+    color:#1C033B;
+}
+.cross:hover{
+    color: rgb(255, 50, 50);
+}
+.error,.statu{
+    top: 10rem;
+    z-index: -2;
+}
+#errordisp{
+    font-size: 3rem;
+    background-color: #fdb4b4;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    border: 2px solid #f05a5a;
+    color: red;
+}
+#statusMsg{
+    font-size: 3rem;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    color: #FDC2A2;
+    background: linear-gradient(#5609b4,#0D043D);
+    border: 2px solid #FDC2A2;
+    border-radius: 0.75rem;
+}
+.replay{
+    top: 28rem;
+}
+.replayBtn{
+    font-size: 3rem;
+    background:linear-gradient(#5609b4,#0D043D);
+    padding: 0.75rem;
+    color: #FFF700;
+    border: 2px solid #FFF700;
+    border-radius: 0.80rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.replayBtn:hover{
+    background:linear-gradient(#FFF700,#FDC2A2);
+    color: #0D043D;
+    scale: 1.3;
+}
+.replay,.error,.statu{
+    display: none;
+}
+
+
+
